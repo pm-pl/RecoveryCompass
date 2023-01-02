@@ -5,4 +5,5 @@ branches:
 projects:
   RecoveryCompass:
     path: ""
+    icon: "rc.gif"
 ...
