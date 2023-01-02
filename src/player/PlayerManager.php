@@ -57,10 +57,10 @@ class PlayerManager
 	 */
 	public function getPlayer(string $name): ?PlayerCache
 	{
-		if ($this->list[$name] instanceof PlayerCache) {
-			return $this->list[$name];
+		if (!isset($this->list[$name])) {
+			return null;
 		}
-		return null;
+		return $this->list[$name];
 	}
 
 	/**
