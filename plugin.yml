@@ -1,0 +1,7 @@
+name: RecoveryCompass
+src-namespace-prefix: vp817
+main: vp817\Main
+api: [ 4.0.0 ]
+version: 1.0.0
+authors: [ vp817 ]
+description: Implements the recovery compass
