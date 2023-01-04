@@ -86,9 +86,9 @@ class EventListener implements Listener
 	 */
 	public function onDeath(PlayerDeathEvent $event): void
 	{
-		$evPlayer = $event->getPlayer()->getName();
+		$evPlayerName = $event->getPlayer()->getName();
 		$playerCache = $this->getPlayerManager()->getPlayer($evPlayerName);
-		$playerCache->setLastDeathPos($playerCache->getPlayer()->getPosition()->asVector3());
+		$playerCache->setLastDeathPos($playerCache->getRealPlayer()->getPosition()->asVector3());
 	}
 
 	/**
