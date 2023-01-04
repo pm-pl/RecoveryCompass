@@ -88,7 +88,7 @@ class EventListener implements Listener
 	{
 		$evPlayer = $event->getPlayer();
 		$playerCache = $this->getPlayerManager()->getPlayer($evPlayer->getName());
-		$playerCache->setLastDeathPos($event->getPlayer()->getPosition()->asVector3());
+		$playerCache->setLastDeathPos($playerCache->getPlayer()->getPosition()->asVector3());
 	}
 
 	/**
